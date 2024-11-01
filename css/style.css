@@ -1,0 +1,26 @@
+
+
+.carousel-item img {
+    height: 400px;
+ }
+ article{
+     background-color: antiquewhite;
+ }
+ 
+ aside{
+     background-color: antiquewhite;
+ }
+
+
+
+ .aside-img {
+    display: inline-block;  
+    margin: 0 10px;  
+    width: 48%; 
+    height: auto;  
+}
+
+
+aside {
+    text-align: center;  
+}
