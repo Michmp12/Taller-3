@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>😽🐾</title>
+    <title>Huellitas 🐾</title>
     <style>
         .navbar-custom {
             background-color: #e6a7b0; 
@@ -39,7 +39,29 @@
             border-radius: 10px;
             margin-top: 10px;
         }
+
+        .fact-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #e6a7b0;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .fact-container {
+            margin-top: 20px;
+            display: none; 
+        }
     </style>
+    <script>
+        function showFact() {
+            const factContainer = document.getElementById("factContainer");
+            factContainer.style.display = "block";
+            factContainer.innerHTML = "¿Sabías que los gatos pueden hacer saltos de hasta seis veces la longitud de su cuerpo? ¡Increíble! 🐈";
+        }
+    </script>
 </head>
 <body>
 
@@ -59,16 +81,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">¿Un gato? 🐈</a>
+                        <a class="nav-link active" aria-current="page" href="Pagina1.html">¿Un gato? 🐈</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Pagina2.html">Huellitas 🐾</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Pagina3.html">Historia gatete 😼</a> <!-- Enlace a Pagina3.html -->
+                        <a class="nav-link" href="Pagina3.html">Historia gatete 😼</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-disabled="true" href="#">Ronroneo 😻</a>
+                        <a class="nav-link" aria-disabled="true" href="Pagina4.html">Ronroneo 😻</a>
                     </li>
                 </ul>
             </div>
@@ -102,6 +124,25 @@
             <aside class="col-md-6">
                 <img src="assets/pason.gif" alt="Gato suave" class="paw-img">
             </aside>
+        </div>
+
+        <div class="row">
+            <article class="col-md-12">
+                <h3>Datos Curiosos sobre los Gatos 🐱</h3>
+                <button class="fact-button" onclick="showFact()">¡Dame cliick!</button>
+                <div id="factContainer" class="fact-container"></div>
+            </article>
+        </div>
+
+        <div class="row">
+            <article class="col-md-12">
+                <h3>🐱🐱🐱</h3>
+                <img src="assets/nose.jpg" alt="Huellita en la arena" class="paw-img">
+                <p>
+                   Hay que tener en cuenta que Los gatos no se cuidan sus patas por sí mismos, pero sí es importante cuidarlas para su salud y bienesta
+                </p>
+                <img src="assets/naranja.jpg" alt="Huellita en la nieve" class="paw-img">
+            </article>
         </div>
     </section>
 
