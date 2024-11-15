@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,72 +7,79 @@
     <link rel="stylesheet" href="css/style.css">
     <title>😽🐾</title>
     <style>
+        /* Estilo de la barra de navegación */
         .navbar-custom {
-            background-color: #e6a7b0; 
+            background-color: #e6a7b0;
         }
         .navbar-custom .nav-link,
         .navbar-custom .navbar-brand {
-            color: rgb(255, 255, 255); 
-            font-family: 'Times New Roman', Times, serif; 
-            font-size: 20px; 
+            color: rgb(255, 255, 255);
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
         }
         .navbar-custom .nav-link:hover {
-            color: #555; 
+            color: #555;
         }
 
+        /* Estilo del carrusel */
         .carousel-control-prev, .carousel-control-next {
-            top: 10%; 
+            top: 10%;
         }
 
-        /* Estilos para las imágenes en el aside */
+        /* Estilo para las imágenes del aside */
         .aside-img {
-            width: 100%; /* Ajusta el tamaño de las imágenes */
+            width: 100%;
             height: auto;
             border-radius: 10px;
-            margin-bottom: 10px; /* Espacio entre imágenes */
+            margin-bottom: 10px;
         }
 
+        /* Estilo para las imágenes extra en la página */
         .extra-img {
-            width: 48%; /* Ajusta el tamaño de las nuevas imágenes */
+            width: 48%;
             height: auto;
             border-radius: 10px;
-            margin: 1%; /* Espacio entre imágenes */
+            margin: 1%;
         }
 
+        /* Contenedor de texto */
         .text-container {
-            margin-top: 20px; /* Espacio entre las imágenes y el texto */
+            margin-top: 20px;
         }
 
+        /* Contenedor de las imágenes en fila */
         .img-container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center; /* Centra las imágenes */
-            margin-top: 10px; /* Espacio superior */
+            justify-content: center;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
+    <!-- Cabecera con carrusel -->
     <header>
         <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="assets/Banner de gato naranja anime.gif" class="d-block w-80" alt="Gato Naranja Anime" style="width: 100%; height: auto; max-height: 340px;">
+                    <img src="assets/Banner de gato naranja anime.gif" class="d-block w-100" alt="Gato Naranja Anime" style="max-height: 340px;">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/Banner de gato en bolsa.gif" class="d-block w-80" alt="Gato en Bolsa" style="width: 100%; height: auto; max-height: 340px;">
+                    <img src="assets/Banner de gato en bolsa.gif" class="d-block w-100" alt="Gato en Bolsa" style="max-height: 340px;">
                 </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
     </header>
 
+    <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-custom" data-bs-theme="dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">
@@ -100,45 +107,45 @@
             </div>
         </div>
     </nav>
-    
+
+    <!-- Contenido principal -->
     <section class="container">
-        <div class="row"> 
+        <div class="row">
+            <!-- Artículo principal -->
             <article class="col-sm-12 col-10">
                 <h2>¿Qué son los gatos?</h2>
-                <p>
-                    Los gatos son animales domésticos populares, conocidos por su naturaleza independiente y su capacidad para cazar. 🙀
-                    Pertenecen a la familia de los felinos y existen muchas razas diferentes, cada una con sus propias características y temperamentos.😺
-                </p>
-                <p>
-                    Son famosos por su agilidad y habilidades de caza, así como por su comportamiento curioso y juguetón. 😼
-                    Los gatos son también conocidos por su ronroneo, que a menudo indican que se sienten cómodos y contentos.😾
-                </p>
-                <p>
-                    Además, los gatos son animales muy limpios, pasan mucho tiempo acicalándose y se adaptan fácilmente a diferentes entornos.😽
-                </p>
+                <p>Los gatos son animales domésticos populares, conocidos por su naturaleza independiente y su capacidad para cazar. 🙀 Pertenecen a la familia de los felinos y existen muchas razas diferentes, cada una con sus propias características y temperamentos.😺</p>
+                <p>Son famosos por su agilidad y habilidades de caza, así como por su comportamiento curioso y juguetón. 😼 Los gatos son también conocidos por su ronroneo, que a menudo indican que se sienten cómodos y contentos.😾</p>
+                <p>Además, los gatos son animales muy limpios, pasan mucho tiempo acicalándose y se adaptan fácilmente a diferentes entornos.😽</p>
             </article>
+            <!-- Aside con imágenes -->
             <aside class="col-sm-12 col-2">
                 <img src="assets/Banner michi bailando.gif" alt="Gato" class="aside-img">
-                <p>
-                    ¿Sabias que la velocidad de los gatos pueden correr hasta 49 km/h en cortas distancias.?
-                </p>
+                <p>¿Sabías que la velocidad de los gatos puede alcanzar hasta 49 km/h en cortas distancias?</p>
                 <img src="assets/nianko.gif" alt="Gato" class="aside-img">
             </aside>
         </div>
-        
+
+        <!-- Sección adicional de texto -->
         <div class="text-container">
             <h3>Adeeemás...</h3>
-            <p>
-                Los gatos son criaturas fascinantes que han estado a nuestro lado durante miles de años. Su capacidad para adaptarse a diferentes entornos y su agudo sentido del oído los convierte en excelentes cazadores. Además, su ronroneo tiene un efecto calmante tanto para ellos como para sus dueños, creando un vínculo especial entre ambos.
-            </p>
+            <p>Los gatos son criaturas fascinantes que han estado a nuestro lado durante miles de años. Su capacidad para adaptarse a diferentes entornos y su agudo sentido del oído los convierte en excelentes cazadores. Además, su ronroneo tiene un efecto calmante tanto para ellos como para sus dueños, creando un vínculo especial entre ambos.</p>
         </div>
 
+        <!-- Galería de imágenes -->
         <div class="img-container">
             <img src="assets/globo.gif" alt="Gato en el campo" class="extra-img">
             <img src="assets/golpe.gif" alt="Gato dormido" class="extra-img">
         </div>
     </section>
 
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Michell - Todos los derechos reservados 💖 | Diseñado con 🫶 ✨</p>
+        <p><a href="https://github.com/Michmp12/Taller-3.git" target="_blank">Repositorio en GitHub</a></p>
+    </footer>
+
+    <!-- Scripts de Bootstrap -->
     <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
